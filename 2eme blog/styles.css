@@ -1,0 +1,88 @@
+nav{
+	font-family: 'Pacifico', cursive;
+}
+
+.navbar-brand img{
+	max-height: 40px;
+}
+body .nav-item{
+	font-size: 25px;
+	color: white;
+}
+.bg-dark {
+    background-color: #888c90!important;
+}
+
+header .row{
+	background-image: url(imgs/banniere-tattoo.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 70vh;
+	align-items: center;
+	margin-left: 30px;
+	clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 90%);
+}
+
+header .formResa{
+	background-color: rgba(242,242,242,0.5);
+	min-height: 70vh;
+	display: flex;
+	align-items: center;
+}
+
+header h1{
+	font-family: 'Pacifico', cursive;
+}
+
+header h2{
+	font-family: 'Shadows Into Light', cursive;
+	color: white;
+	margin-bottom: 50px;
+}
+
+header .slogan{
+	display:flex;
+	min-height: 70vh;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+@media (max-width: 576px) {
+	header .slogan{
+		display:none;
+	}
+}
+
+@media (max-width: 768px) {
+	header .slogan{
+		display:none;
+	}
+}
+
+#presentation h2{
+	margin-bottom: 50px;
+	margin-top: -30px;
+	font-family: 'Pacifico', cursive;
+}
+
+#presentation .media span{
+	font-size:3em;
+	width:1em;
+	text-align:center;
+}
+
+#presentation .media{
+	padding: .5em 1rem;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+#presentation .media:hover{
+    background-color: rgba(173, 173, 173, 0.51);
+}
+
+#presentation h5{
+	font-family: 'Shadows Into Light', cursive;
+}
