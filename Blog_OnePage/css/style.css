@@ -47,7 +47,7 @@ section{
 /**************************************header*/
 header{
 	height: auto;
-	padding: 10px 0px;
+	padding: 5px 0px;
 	position: fixed;
 	width: 100%;
 	z-index: 999;
@@ -101,7 +101,7 @@ header i.icon{
 
 /**************************************home section*/
 #home{
-	height: 650px;
+	height: 1000px;
 	background-image:url(../imgs/homesection.jpg);
 	background-size: cover;
 	background-position:center;
