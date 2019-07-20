@@ -1,9 +1,6 @@
 $(document).ready(function(){
 
-	$('i.icon').click(function(){
-		$('.nav-list').slideToggle()
-	});
-
+	
 	$(window).scroll(function(){
 		var sc = $(this).scrollTop();
 		if(sc > 50){
@@ -11,5 +8,5 @@ $(document).ready(function(){
 		}else{
 			$('header').removeClass('sticky');
 		}
-	})
+	});
 });

@@ -3,10 +3,15 @@
 
 <head>
   <meta charset="utf-8">
+
+  <!--******************************GOOGLE FONTS*******************************-->
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
   
+  <!--******************************CSS*******************************-->
   <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  
+
+  <!--******************************FONT *******************************-->
   <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js" data-auto-replace-svg="nest"></script>
 
   <title>One page less boostrap possible</title>
@@ -15,68 +20,133 @@
 
 <body>
   <header>
+    <!--******************************NAV*******************************-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbarspy">
+      <a class="logo logo-icon" href="#"><i class="fas fa-mountain"></i></a>
+      <a href="#" class="logo logo2">MyBlog</a>
 
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="logo" href="#"><i class="fas fa-mountain"></i></a>
-        <a href="#" class="logo logo2">MyBlog</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-          <ul class="navbar-nav ml-auto font-weight-bold px-6 nav-list">
 
-            <li class="nav-item list">
-              <a class="nav-item" href="#">Home</a>
+        <ul class="navbar-nav ml-auto font-weight-bold px-6 nav-list">
+
+          <li class="nav-item active">
+            <a class="nav-item" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#travels">My travels</a></li>
+            <li class="nav-item"><a href="pictures">Photos</a>
             </li>
-            <li class="nav-item list">
-              <a href="">About</a>
+            <li class="nav-item">
+              <a class="nav-item" href="#contact">Contact</a>
             </li>
-            <li class="nav-item list">
-              <a href="">My travels</a></li>
-              <li class="nav-item list"><a href="">Photos</a>
-              </li>
-              <li class="nav-item list">
-                <a class="nav-item list" href="#">Contact</a>
-              </li>
 
-            </div>
+          </div>
 
-          </nav>
-    
-  </header>
+        </nav>
 
-  <section class="sections home text-center">
+      </header>
 
-    <div class="overlay">
+      <!--******************************Bannier Home*******************************-->
+      <section class="sections text-center" id="home">
+
+        <div class="overlay">
+
+          <div class="container">
+
+           <div class="home-content">
+
+            <h3 class="home-title">Welcome on my own designed blog.</h3>
+            <p class="home-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, ut?</p>
+            <button class="btn button btnStart">Get Started</button>
+            <button class="btn button btnDiscover">Discover More</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--******************************Section About*******************************-->
+    <section class="sections" id="about">
 
       <div class="container">
 
-       <div class="home-content">
+        <div class="section-top">
 
-        <h3 class="home-title">Welcome on my own designed blog.</h3>
-        <p class="home-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, ut?</p>
-        <button class="btn button btnStart">Get Started</button>
-        <button class="btn button btnDiscover">Discover More</button>
+          <h2 class="section-title text-center">About me</h2>
+          <div class="line"><span></span></div>
+          <p class="about-txt text-center mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut porro, ad cum aliquam ipsum deleniti!</p>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-12 col-md-6">
+
+            <div class="about-infos">
+
+              <h3>Welcome on <span>MyBlog</span>, my own designed blog</h3>
+              <p class="infos-msg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, nisi iste, nesciunt quis fugiat molestiae!</p>
+              <button class="about-infos-btn">Learn more</button>
+
+            </div>
+
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="about-img">
+              <img src="imgs/aboutimg.jpg" alt="traveler">
+              <h3>Discover a new world of pictures</h3>
+            </div>
+
+          </div>
+        </div>
 
       </div>
-      
-    </div>
 
-  </div>
+    </section>
 
-</section>
+    <section class="sections" id="folio">
+
+      <div class="container-fluid">
+
+        <div class="section-top text-center">
+
+          <h2 class="section-title">Articles</h2>
+          <div class="line"><span></span></div>
+          <p class="about-txt mt-3">My Articles about my travels</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <div class="folio-article">
+              <img src="imgs/folio/ex1.jpg" class="folio-img" alt="">
+              <h3 class="folio-title">Travel-1</h3>
+              <p class="folio-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, error.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
 
 
+    <script src="js/vendors/jquery-3.4.1.min.js"></script>
+    <script src="js/vendors/bootstrap.js"></script>
+    <script src="js/main.js"></script>
 
-<script src="js/vendors/jquery-3.4.1.min.css"></script>
-<script src="js/vendors/bootstrap.js"></script>
-<script src="js/main.js"></script>
+  </body>
 
-</body>
-
-</html>
+  </html>
